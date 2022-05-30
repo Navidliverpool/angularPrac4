@@ -1,0 +1,61 @@
+.wholePage {
+    padding: 3em;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: brown;
+}
+
+h1 {
+    text-align: center;
+}
+
+.P-leftAndRightSide {
+    display: flex;
+    width: 100%;
+    padding-top: 3em;
+}
+
+.P-leftSideForm {
+    width: 50%;
+    padding: 2em;
+}
+
+form .form-group {
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+form button {
+    background-color: black;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    color: white;
+}
+
+.form-group {
+    padding-top: 1em;
+}
+
+.form-group-inline {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-group-inline div {
+    width: 25%;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5em 0.3em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
