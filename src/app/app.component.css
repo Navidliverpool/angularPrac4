@@ -1,23 +1,27 @@
-.wholePage {
+.container {
     padding: 3em;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: brown;
 }
 
 h1 {
     text-align: center;
 }
 
-.P-leftAndRightSide {
+.cards-container {
     display: flex;
     width: 100%;
     padding-top: 3em;
 }
 
-.P-leftSideForm {
+.cards-form {
     width: 50%;
     padding: 2em;
+}
+
+.cards-grid {
+    width: 50%;
+    margin-top: 4.5em;
 }
 
 form .form-group {
@@ -27,7 +31,24 @@ form .form-group {
 form label {
     display: block;
     margin-bottom: 0.5em;
+    font-size: small;
     font-weight: bold;
+}
+
+.upper-form label {
+    font-size: medium;
+}
+
+form input {
+    width: 90%;
+    padding: 0.5em 0.3em;
+    margin-bottom: 0.5em;
+    border-radius: 3px;
+    font-size: 1.2em;
+}
+
+.upper-form input {
+    width: 50%;
 }
 
 form button {
@@ -42,20 +63,43 @@ form button {
 }
 
 .form-group-inline {
+    width: 93%;
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
 }
 
 .form-group-inline div {
-    width: 25%;
+    width: 30%;
 }
 
-form input {
+.card-row {
+    display: flex;
     width: 100%;
-    padding: 0.5em 0.3em;
-    margin-bottom: 0.5em;
-    border-radius: 5px;
-    font-size: 1.2em;
+}
+
+.card-row-details {
+    background-color: khaki;
+    padding: 1em;
+    margin-top: 0.1em;
+    margin-right: 0.12em;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 73%;
+}
+
+.card-row-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-row-action a {
+    display: block;
+    cursor: pointer;
+    padding: 1em;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: orangered;
+    color: blueviolet;
 }
