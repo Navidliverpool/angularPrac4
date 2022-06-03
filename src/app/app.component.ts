@@ -28,16 +28,17 @@ ngOnInit(): void {
 allCards(){
   this.cardsService.getAllCards().subscribe(
     Response => {
-  console.log(this.card);
-
       this.cards = Response;
     }
   )
 }
 
-onSubmit()
-{
-  console.log(this.card);
-
+onSubmit(){
+  this.cardsService.addCard(this.card).subscribe(
+    Response => {
+      this.card = Response;
+    }
+  )
 }
+
 }
