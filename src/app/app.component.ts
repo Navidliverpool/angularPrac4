@@ -36,7 +36,7 @@ allCards(){
 onSubmit(){
   this.cardsService.addCard(this.card).subscribe(
     Response => {
-      this.card = Response;
+console.log(Response);
     }
   )
 }

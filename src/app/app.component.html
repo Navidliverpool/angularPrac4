@@ -3,18 +3,14 @@
 
     <div class="cards-container">
         <div class="cards-form">
-            <form (ngSubmit)="onSubmit()">
+            <form #form="ngForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
                     <div class="upper-form">
+                        <label>Card Number</label>
+                        <input type="text" name="cardNumber" [(ngModel)]="card.cardNumber">
+
                         <label>Card Name</label>
                         <input type="text" name="cardholderName" [(ngModel)]="card.cardholderName">
-                    </div>
-
-                    <div class="form-group">
-                        <div class="upper-form">
-                            <label>Card Number</label>
-                            <input type="text" name="cardNumber" [(ngModel)]="card.cardNumber">
-                        </div>
                     </div>
                 </div>
 
@@ -35,7 +31,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <button>Submit</button>
+                    <button>save</button>
                 </div>
             </form>
         </div>
