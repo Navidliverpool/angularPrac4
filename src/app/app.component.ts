@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from './Model/card.model';
 import { Error } from './Model/card.model';
-
 import { CardsService } from './Service/cards.service';
 
 @Component({
@@ -19,9 +18,6 @@ card: Card = {
   expiryMonth: '',
   cvc: '',
   expiryYear: ''
-};
-consoleTheError: Error = {
-status: ''
 };
 
 constructor(private cardsService: CardsService) {}
@@ -48,8 +44,7 @@ console.log(Response);
 }
 
 onSubmitDelete(cardid: string){
-  this.cardsService.deleteCard(cardid, this.consoleTheError.status);
-  return this.allCards();
+this.cardsService.deleteCard(cardid);
 }
 
 

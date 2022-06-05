@@ -12,7 +12,7 @@ export class CardsService {
 
 baseUrl = 'https://localhost:7000/api/cards';
 
-  constructor(private http: HttpClient) { 
+constructor(private http: HttpClient) { 
 
   }
 
@@ -26,9 +26,9 @@ addCard(card: Card): Observable<Card>{
   return this.http.post<Card>(this.baseUrl, card);
 }
 
-deleteCard (cardid: string, errorStatus: string){
-  this.http.delete<Card>(this.baseUrl + "/" + cardid).subscribe(() => errorStatus = 'Delete successful');
-}
+deleteCard(cardid: string){
+ this.http.delete<Card>(this.baseUrl + "/" + cardid).subscribe();
+};
 
 
 
