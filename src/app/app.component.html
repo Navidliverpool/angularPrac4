@@ -6,11 +6,11 @@
             <form #form="ngForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
                     <div class="upper-form">
-                        <label>Card Number</label>
-                        <input type="text" name="cardNumber" [(ngModel)]="card.cardNumber">
-
                         <label>Card Name</label>
                         <input type="text" name="cardholderName" [(ngModel)]="card.cardholderName">
+
+                        <label>Card Number</label>
+                        <input type="text" name="cardNumber" [(ngModel)]="card.cardNumber">
                     </div>
                 </div>
 

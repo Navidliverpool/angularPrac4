@@ -80,7 +80,11 @@ form button {
 
 .card-row-details {
     background-color: khaki;
+    flex-grow: 0.1;
     padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 0.1em;
     margin-right: 0.12em;
     border-top-left-radius: 3px;
