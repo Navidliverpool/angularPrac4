@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import{HttpClient} from '@angular/common/http';
+import{HttpClient, HttpHeaders} from '@angular/common/http';
 import { Card } from '../Model/card.model';
+import { Error } from '../Model/card.model';
 import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
@@ -24,5 +25,11 @@ addCard(card: Card): Observable<Card>{
   card.id = '00000000-0000-0000-0000-000000000000';
   return this.http.post<Card>(this.baseUrl, card);
 }
+
+deleteCard (cardid: string, errorStatus: string){
+  this.http.delete<Card>(this.baseUrl + "/" + cardid).subscribe(() => errorStatus = 'Delete successful');
+}
+
+
 
 }
