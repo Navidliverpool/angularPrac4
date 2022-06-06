@@ -1,6 +1,6 @@
-**AngularPrac4** is an **Angular V13** project connected to a **.NET CORE API**.
+<center>**AngularPrac4** is an **Angular V13** project connected to a **.NET CORE API**.
 
-It is an **Admin Card Page Sample**.
+It is an **Admin Card Page Sample**.</center>
 
 How it works:
 
