@@ -1,4 +1,4 @@
-**AngularPrac4** is an angular project.
+**AngularPrac4** is an angular project connected to a **.NET CORE API**.
 
 It is an **Admin Card Page Sample**.
 
