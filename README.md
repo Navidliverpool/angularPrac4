@@ -1,10 +1,10 @@
 **AngularPrac4** is an angular project.
 
-It is an admin Card Page sample.
+It is an **Admin Card Page Sample**.
 
 How it works:
 
-The Card page is included of two aspects.
+The Card Page is included of two aspects.
 
 At the left side there are inputs to create a new card and it gets saved into the database through the api.
 
